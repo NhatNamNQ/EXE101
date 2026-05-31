@@ -1,0 +1,18 @@
+# Dependency directories
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Playwright/testing directories
+.playwright-mcp/
+playwright-report/
+test-results/
+
+# Log files
+*.log
