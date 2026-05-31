@@ -761,7 +761,7 @@ export default function App() {
         >
           <SlideChrome {...p(8)} />
           <div className="slide-inner">
-            <div className="head" style={{ marginBottom: "30px" }}>
+            <div className="head" style={{ marginBottom: "10px" }}>
               <Reveal isActive={currentSlide === 8} delay={0}>
                 <span className="eyebrow">Differentiation</span>
               </Reveal>
@@ -872,11 +872,26 @@ export default function App() {
                   </div>
                 </div>
               </Reveal>
+              
+              <Reveal 
+                isActive={currentSlide === 8} 
+                delay={250} 
+                as="p" 
+                style={{ 
+                  marginTop: "20px", 
+                  fontSize: "18px", 
+                  textAlign: "center", 
+                  fontStyle: "italic", 
+                  color: "var(--ink-soft)" 
+                }}
+              >
+                MoodCafe's innovation lies in shifting from location-based search to intention-based discovery.
+              </Reveal>
             </div>
 
             <div
               className="grid"
-              style={{ gridTemplateColumns: "repeat(5, 1fr)", gap: "16px" }}
+              style={{ gridTemplateColumns: "repeat(5, 1fr)", gap: "16px", marginTop: "-36px" }}
             >
               {uspCards.map((card, idx) => (
                 <Reveal
